@@ -14,6 +14,8 @@
 		D61BD6D620C9780F00C919D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61BD6D420C9780F00C919D6 /* LaunchScreen.storyboard */; };
 		D61BD6E120C9780F00C919D6 /* StanfordDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BD6E020C9780F00C919D6 /* StanfordDemoTests.swift */; };
 		D61BD6EC20C9780F00C919D6 /* StanfordDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BD6EB20C9780F00C919D6 /* StanfordDemoUITests.swift */; };
+		D66B90F720D010F900CA3B3E /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B90F620D010F900CA3B3E /* Concentration.swift */; };
+		D66B90F920D011FD00CA3B3E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66B90F820D011FD00CA3B3E /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D61BD6E720C9780F00C919D6 /* StanfordDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StanfordDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61BD6EB20C9780F00C919D6 /* StanfordDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanfordDemoUITests.swift; sourceTree = "<group>"; };
 		D61BD6ED20C9780F00C919D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D66B90F620D010F900CA3B3E /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		D66B90F820D011FD00CA3B3E /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				D61BD6CB20C9780C00C919D6 /* AppDelegate.swift */,
 				D61BD6CD20C9780C00C919D6 /* ViewController.swift */,
+				D66B90F620D010F900CA3B3E /* Concentration.swift */,
+				D66B90F820D011FD00CA3B3E /* Card.swift */,
 				D61BD6F920C9782300C919D6 /* Support */,
 				D61BD6D720C9780F00C919D6 /* Info.plist */,
 			);
@@ -266,6 +272,8 @@
 			files = (
 				D61BD6CE20C9780C00C919D6 /* ViewController.swift in Sources */,
 				D61BD6CC20C9780C00C919D6 /* AppDelegate.swift in Sources */,
+				D66B90F720D010F900CA3B3E /* Concentration.swift in Sources */,
+				D66B90F920D011FD00CA3B3E /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
