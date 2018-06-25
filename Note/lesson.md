@@ -29,3 +29,7 @@
 * control + i
 
 ### debug
+
+### closure
+* colsure is reference type(in heap)
+* 
