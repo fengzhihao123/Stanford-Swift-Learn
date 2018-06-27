@@ -30,6 +30,38 @@
 
 ### debug
 
+Struct
+* Mutating func (why class don’t  need keyword?)
+* Var don’t need, swift know it
+
+
+### Protocol
+* inits must marked required
+* 将protocol的实现放在extension中,using extension to provide implement protocol
+* Func中如果要改变var，则要声明为mutating
+* class don’t need mutating
+* Hashable
+* CountableRange : Sequence/Collection
+* Multiple inheritance:why ? Apple can create generic code
+* https://stackoverflow.com/questions/33471858/swift-protocol-weak-cannot-be-applied-to-non-class-type
+
+### String
+* String.index
+* String is value type (it’s a  struct, so it’s value copy)
+
+### NSAttributedString
+* 尽量少使用any
+* class， not struct
+
 ### closure
 * colsure is reference type(in heap)
-* 
+
+* thrown error
+* do not use any in your data structure
+* any/as?
+* NSObject/NSNumber/Date/Data
+* init(frame: CGRect)/init(coder: NSCoder)/awakeFromNib
+* CGFloat/CGPoint/CGSize
+
+
+

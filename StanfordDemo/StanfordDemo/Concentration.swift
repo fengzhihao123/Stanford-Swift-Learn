@@ -7,11 +7,11 @@
 //
 
 import Foundation
-class Concentration {
+struct Concentration {
     var cards = [Card]()
     var indexOfOneAndOnlyFaceUpCard: Int?
     
-    func chooseCard(at index: Int) -> Void {
+    mutating func chooseCard(at index: Int) -> Void {
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 //check card if match
