@@ -68,5 +68,8 @@ Struct
 * UIBezierpath
 * UIColor
 * Layers
-* Font: 使用prefer.font
+* Font: 使用prefer.font 
+* contentofscalefactor: how many pixel pre point
+* customstringconvertible 
 
+### enum 
