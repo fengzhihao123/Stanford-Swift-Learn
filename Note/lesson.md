@@ -63,5 +63,13 @@ Struct
 * init(frame: CGRect)/init(coder: NSCoder)/awakeFromNib
 * CGFloat/CGPoint/CGSize
 
+### custom view
+* core graphics
+* UIBezierpath
+* UIColor
+* Layers
+* Font: 使用prefer.font 
+* contentofscalefactor: how many pixel pre point
+* customstringconvertible 
 
-
+### enum 
