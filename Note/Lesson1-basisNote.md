@@ -21,10 +21,34 @@ var foo: Double {
 * 为什么要写成computed？因为很多时候某个值需要依赖别的值或者状态
 
 ### Array
+* 使用`indices`for-in(带下标)一个数组
+```
+let students = ["hack", "green", "jack"]
+//循环访问元素
+for element in students {
+    print(element)
+}
+//第一种带下标的循环
+for idx in 0..<students.count {
+    print("index: \(idx)")
+}
+//第二种带下标的循环
+for idx in students.indices {
+    print(students[idx])
+}
+
+```
 
 ### Dictdory
 
 ### Access Control
+* internal:默认为internal，APP或者framework中任何对象都能使用
+* private:只能内部对象使用
+* private(set):外面的对象可以访问该属性，但是不能设置它的值
+* fileprivate:源文件中任何代码都可以访问
+* public(仅用于framework):你的framework外的对象也可以调用，如pod引用的框架可用的方法和类一般都是定义为public
+* open(仅用于framework):你的framework之外的对象可以继承该类
+* 一个比较好的方法是把所有的默认为private，当想给其他人用的时候在修改访问权限
 
 
 ### Struct/Class
@@ -71,3 +95,26 @@ print(getSome())
 * 你可以把tuple赋值给某个变量，也可以直接使用点语法
 * tuple对内部的值是强引用
 
+### Extension
+
+#### 可以扩展现有的数据结构
+* 你可以给一个enum/struct/class添加属性或者方法，即使你不知道它的源码
+
+#### 使用限制
+* 不能重写已经存在的属性或者方法，你只能增加新的
+* 你添加的属性不能storage associated，只能添加computed
+
+#### 它很容易被滥用
+* 当它被使用时，应该是简单易读的，不应该把它设计的晦涩难懂
+* 不要将它变成一个好的面向对象设计模式的替代品
+* 在使用的时候最好写一些精炼，通用性高的function
+
+### Optional
+* 它是一个普通的swift类型，如Int、String等
+* 它是一个enumeration
+* 
+
+### enum
+* enum是一个值类型，所以当它传递的时候会值拷贝
+* 它只能有离散的状态
+* 
