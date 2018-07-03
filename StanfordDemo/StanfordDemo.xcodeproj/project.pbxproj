@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61A88E820EBA14000FE7ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61A88E720EBA14000FE7ACC /* AppDelegate.swift */; };
+		D61A88EA20EBA14000FE7ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61A88E920EBA14000FE7ACC /* ViewController.swift */; };
+		D61A88ED20EBA14000FE7ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61A88EB20EBA14000FE7ACC /* Main.storyboard */; };
+		D61A88EF20EBA14100FE7ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61A88EE20EBA14100FE7ACC /* Assets.xcassets */; };
+		D61A88F220EBA14100FE7ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61A88F020EBA14100FE7ACC /* LaunchScreen.storyboard */; };
+		D61A88F920EBA15F00FE7ACC /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61A88F820EBA15F00FE7ACC /* PlayingCard.swift */; };
 		D61BD6CC20C9780C00C919D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BD6CB20C9780C00C919D6 /* AppDelegate.swift */; };
 		D61BD6CE20C9780C00C919D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61BD6CD20C9780C00C919D6 /* ViewController.swift */; };
 		D61BD6D120C9780C00C919D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61BD6CF20C9780C00C919D6 /* Main.storyboard */; };
@@ -35,7 +41,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D61A88A920EB9F3700FE7ACC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D61A88E520EBA14000FE7ACC /* PlayingCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61A88E720EBA14000FE7ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D61A88E920EBA14000FE7ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D61A88EC20EBA14000FE7ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D61A88EE20EBA14100FE7ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D61A88F120EBA14100FE7ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D61A88F320EBA14100FE7ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61A88F820EBA15F00FE7ACC /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
 		D61BD6C820C9780C00C919D6 /* StanfordDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StanfordDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61BD6CB20C9780C00C919D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61BD6CD20C9780C00C919D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D61A88E220EBA14000FE7ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D61BD6C520C9780C00C919D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,12 +112,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D61A88E620EBA14000FE7ACC /* PlayingCard */ = {
+			isa = PBXGroup;
+			children = (
+				D61A88E720EBA14000FE7ACC /* AppDelegate.swift */,
+				D61A88E920EBA14000FE7ACC /* ViewController.swift */,
+				D61A88F820EBA15F00FE7ACC /* PlayingCard.swift */,
+				D61A88EB20EBA14000FE7ACC /* Main.storyboard */,
+				D61A88F320EBA14100FE7ACC /* Info.plist */,
+				D61A88F720EBA14900FE7ACC /* Support */,
+			);
+			path = PlayingCard;
+			sourceTree = "<group>";
+		};
+		D61A88F720EBA14900FE7ACC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D61A88EE20EBA14100FE7ACC /* Assets.xcassets */,
+				D61A88F020EBA14100FE7ACC /* LaunchScreen.storyboard */,
+			);
+			name = Support;
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
 		D61BD6BF20C9780C00C919D6 = {
 			isa = PBXGroup;
 			children = (
 				D61BD6CA20C9780C00C919D6 /* StanfordDemo */,
 				D61BD6DF20C9780F00C919D6 /* StanfordDemoTests */,
 				D61BD6EA20C9780F00C919D6 /* StanfordDemoUITests */,
+				D61A88E620EBA14000FE7ACC /* PlayingCard */,
 				D61BD6C920C9780C00C919D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +152,7 @@
 				D61BD6C820C9780C00C919D6 /* StanfordDemo.app */,
 				D61BD6DC20C9780F00C919D6 /* StanfordDemoTests.xctest */,
 				D61BD6E720C9780F00C919D6 /* StanfordDemoUITests.xctest */,
+				D61A88E520EBA14000FE7ACC /* PlayingCard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +201,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D61A88E420EBA14000FE7ACC /* PlayingCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D61A88F420EBA14100FE7ACC /* Build configuration list for PBXNativeTarget "PlayingCard" */;
+			buildPhases = (
+				D61A88E120EBA14000FE7ACC /* Sources */,
+				D61A88E220EBA14000FE7ACC /* Frameworks */,
+				D61A88E320EBA14000FE7ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlayingCard;
+			productName = PlayingCard;
+			productReference = D61A88E520EBA14000FE7ACC /* PlayingCard.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D61BD6C720C9780C00C919D6 /* StanfordDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D61BD6F020C9780F00C919D6 /* Build configuration list for PBXNativeTarget "StanfordDemo" */;
@@ -149,6 +225,7 @@
 				D61BD6C420C9780C00C919D6 /* Sources */,
 				D61BD6C520C9780C00C919D6 /* Frameworks */,
 				D61BD6C620C9780C00C919D6 /* Resources */,
+				D61A88A920EB9F3700FE7ACC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,10 +278,13 @@
 		D61BD6C020C9780C00C919D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "冯志浩";
 				TargetAttributes = {
+					D61A88E420EBA14000FE7ACC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					D61BD6C720C9780C00C919D6 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -234,11 +314,22 @@
 				D61BD6C720C9780C00C919D6 /* StanfordDemo */,
 				D61BD6DB20C9780F00C919D6 /* StanfordDemoTests */,
 				D61BD6E620C9780F00C919D6 /* StanfordDemoUITests */,
+				D61A88E420EBA14000FE7ACC /* PlayingCard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D61A88E320EBA14000FE7ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61A88F220EBA14100FE7ACC /* LaunchScreen.storyboard in Resources */,
+				D61A88EF20EBA14100FE7ACC /* Assets.xcassets in Resources */,
+				D61A88ED20EBA14000FE7ACC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D61BD6C620C9780C00C919D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +357,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D61A88E120EBA14000FE7ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61A88EA20EBA14000FE7ACC /* ViewController.swift in Sources */,
+				D61A88F920EBA15F00FE7ACC /* PlayingCard.swift in Sources */,
+				D61A88E820EBA14000FE7ACC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D61BD6C420C9780C00C919D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +410,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D61A88EB20EBA14000FE7ACC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61A88EC20EBA14000FE7ACC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D61A88F020EBA14100FE7ACC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D61A88F120EBA14100FE7ACC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		D61BD6CF20C9780C00C919D6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -328,6 +445,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D61A88F520EBA14100FE7ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93J5P3W89X;
+				INFOPLIST_FILE = PlayingCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..PlayingCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D61A88F620EBA14100FE7ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93J5P3W89X;
+				INFOPLIST_FILE = PlayingCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com..PlayingCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D61BD6EE20C9780F00C919D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,6 +718,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D61A88F420EBA14100FE7ACC /* Build configuration list for PBXNativeTarget "PlayingCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D61A88F520EBA14100FE7ACC /* Debug */,
+				D61A88F620EBA14100FE7ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D61BD6C320C9780C00C919D6 /* Build configuration list for PBXProject "StanfordDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
