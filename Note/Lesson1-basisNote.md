@@ -117,4 +117,12 @@ print(getSome())
 ### enum
 * enum是一个值类型，所以当它传递的时候会值拷贝
 * 它只能有离散的状态
-* 
+* 每个状态都可以有一个自己的关联值（这个关联值不是必须的，也可以没有）
+* case的判断使用switch
+
+```
+//两种命名方式
+var item = FastFoodMenuItem.cookie
+var otherItem: FastFoodMenuItem = .cookie
+//var item = .cookie: 这种是不行的，Swift无法推断出它的类型
+```
