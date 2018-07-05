@@ -52,6 +52,17 @@ for idx in students.indices {
 
 
 ### Struct/Class
+#### class
+* 支持面向对象设计
+* 引用类型；存储在堆中；通过指针来传递值
+* swift通过ARC来自动清理heap中的内存
+* 单继承
+* ARC：strong、weak、unowned
+
+#### struct
+* struct是值类型；不存储在heap中；通过copy自己来传递
+* 不支持继承
+* 如果想改变copy的值需要标记`mutating`；支持函数式编程
 
 ### Range
 
@@ -109,20 +120,53 @@ print(getSome())
 * 不要将它变成一个好的面向对象设计模式的替代品
 * 在使用的时候最好写一些精炼，通用性高的function
 
-### Optional
-* 它是一个普通的swift类型，如Int、String等
-* 它是一个enumeration
-* 
 
 ### enum
 * enum是一个值类型，所以当它传递的时候会值拷贝
 * 它只能有离散的状态
 * 每个状态都可以有一个自己的关联值（这个关联值不是必须的，也可以没有）
-* case的判断使用switch
+* case的判断使用switch；switch如果某个case不想做任何操作可以使用break；如果想忽略几个case可以使用default；每个case可以写多行代码
+* 可以使用let语法来访问每个case中的变量；你的本地变量名可以跟声明的名字不一致
+* enum可以拥有方法和计算属性，但是不能有存储属性
 
 ```
 //两种命名方式
 var item = FastFoodMenuItem.cookie
 var otherItem: FastFoodMenuItem = .cookie
 //var item = .cookie: 这种是不行的，Swift无法推断出它的类型
+
+enum FastFoodMenuItem {
+    case hamburger(numberOfP: Int)
+    case drink(String, ounces: Int)
+    case cookie
+}
+
+var item = FastFoodMenuItem.drink("aaaa", ounces: 10)
+
+switch item {
+case .drink(let name, let ounces):
+    print(name, ounces)
+default:
+    print("default")
+}
 ```
+
+### Optional
+* 它是一个普通的swift类型，如Int、String等
+* 它是一个enumeration
+* 它有两种状态：已经设置了值；未设置值，为nil
+* 可以使用`!`强制解包；可以通过`if-let`安全解包；也可以通过`??`设置一个默认值
+
+```
+//声明
+var num: Int?
+//它的伪代码如下：
+enum Optional <T> {
+    case none
+    case some(<T>)
+}
+```
+
+### protocol
+* 支持多继承
+* 
