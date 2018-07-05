@@ -10,6 +10,10 @@ import UIKit
 
 class PlayingCard: UIView {
     override func draw(_ rect: CGRect) {
+        let roundRect = UIBezierPath(roundedRect: bounds, cornerRadius: 16.0)
+        roundRect.addClip()
+        UIColor.white.setFill()
+        roundRect.fill()
         
 //        let path = UIBezierPath()
 //        path.addArc(withCenter: CGPoint(x: bounds.midX, y: bounds.midY), radius: 100.0, startAngle: 0, endAngle: 2*CGFloat.pi, clockwise: true)
